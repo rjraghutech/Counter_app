@@ -6,9 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Counter</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: burlywood;
+        }
+        .cont {
+            height: 100svh;
+            margin-top: 100px;
+            display: grid;
+            place-items: center;
+        }
+        .counter {
+            color: blue;
+            font-weight: bolder;
+            font-size: 8rem;
+        }
+        .num {
+            font-weight: bold;
+            font-size: 5rem;
+        }
+        .btn {
+            border: 4px solid black;
+            border-radius: 15px;
+            padding: 10px;
+            width: 100px;
+            color: black;
+            font-weight: 800;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: black;
+            color: white;
+        }
+        .increase:hover {
+            background-color: green;
+        }
+        .decrease:hover {
+            background-color: red;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="cont">
+        <span class="counter">Counter</span>
+        <span class="num">0</span>
+        <div class="btnCont">
+            <button class="btn increase">Increase</button>
+            <button class="btn reset">Reset</button>
+            <button class="btn decrease">Decrease</button>
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
